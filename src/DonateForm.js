@@ -1,14 +1,13 @@
 import React from "react"
 import Button from 'react-bootstrap/Button';
 
+function DonateForm(props) {
 
-function Form(props) {
     return (
         <div>
             <form>
              <h2>Event Name </h2>
-                
-                
+    
             <input required type="text" placeholder="" /><br />
             <label>Location</label><br />
             <input required type="text"  placeholder="" /><br />
@@ -26,4 +25,4 @@ function Form(props) {
     )
 }
 
-export default Form
+export default DonateForm
