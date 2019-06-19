@@ -1,12 +1,32 @@
 import React from "react"
 import Button from 'react-bootstrap/Button';
+import axios from 'axios';
 
+class Form extends React.Component {
 
-function Form(props) {
-    return (
-        <div>
-            <form>
-             <h2>Event Name </h2>
+    something = (event) => {
+        console.log('Im going to send Express a GET request');
+        event.preventDefault(); // NO REFRESH
+         
+        
+
+        axios.get('http://localhost:4000/getEvents')
+        .then( res => {
+            console.log('got it!');
+            console.log(res);
+        })
+        .catch( err => {
+            console.log(err);
+        })
+
+        console.log('On its way!');
+    }
+
+    render() {
+        return (
+            <div>
+                <form onSubmit={this.something}>
+                <h2>Paypal </h2>
                 
                 
             <input required type="text" placeholder="" /><br />
@@ -24,6 +44,7 @@ function Form(props) {
 
         </div>
     )
+}
 }
 
 export default Form
