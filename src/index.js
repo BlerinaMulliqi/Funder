@@ -5,6 +5,9 @@ import './index.css';
 import App from './App'
 import DonateForm from './DonateForm'
 import Form from './Form'
+//install "npm install --save reactstrap react react-dom"
+import Nav from './Nav'
+import EventList from './EventList'
 
 ReactDOM.render(
   <Router>
@@ -12,6 +15,7 @@ ReactDOM.render(
         <Route exact path="/" component={App} />
         <Route path="/donate" component={DonateForm} />
         <Route path="/form" component={Form} />
+        <Route path="/EventList" component={EventList} />
       </div>
   </Router>,
   document.getElementById('root')

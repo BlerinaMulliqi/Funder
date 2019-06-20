@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .App-logo {
@@ -9,15 +10,31 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+ background-color: #282c34;
+ background-image: url('https://www.wow1day.com/sites/default/files/national-blog/Color%20Wheel-Feature%20Image.jpg');
+ min-height: 100vh;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ font-size: calc(10px + 2vmin);
+ color: black;
+ background-repeat: no-repeat;
+ background-size: 1450px 800px;
 }
+
+.box{
+  padding-right: 30px;
+   border-radius: 25px;
+  background: #73AD21;
+  padding: 20px; 
+  width: 400px;
+  height: 350px; 
+}
+.event-heading{
+  padding-right: 20px;
+}
+
 
 .App-link {
   color: #61dafb;
@@ -35,3 +52,7 @@
   margin: 0 auto;
     display: block;
  }
+.main-title {
+  text-align: center;
+
+}
