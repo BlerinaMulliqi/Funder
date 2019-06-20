@@ -12,4 +12,9 @@ client.connect()
 client.query('SELECT * from events', (err,res) => {
 console.log(err,res)
 client.end()
+
 })
+
+})
+
+

@@ -9,21 +9,16 @@ app.use(bodyparser.json()); //middleware
 
 // axios.get('http://localhost:4000/getEvents')
 app.get('/getEvents', function (request, response) {
-   console.log('GOT a REQUEST');
-   response.send('Hi thereno');
+    console.log('GOT a REQUEST');
+    response.send('Hi thereno');
 })
 
 app.post('/', function (request, response) {
-   console.log(request.body);
+    console.log(request.body);
 
-   response.send('hello')
+    response.send('hello')
 })
 
 app.listen(4000, function () {
-   console.log('Example app listening on port 4000!');
+    console.log('Example app listening on port 4000!');
 });
-
-
-
-
-

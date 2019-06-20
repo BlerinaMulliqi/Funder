@@ -25,7 +25,6 @@ class DonateForm extends React.Component {
     render() {
         return (
             <div>
-
                 <form onSubmit={this.something}>
                 <h2>Paypal </h2>
         
@@ -40,12 +39,9 @@ class DonateForm extends React.Component {
                 <button>Post</button>
 
 
-
                 </form>
-                
 
             </div>
-
         )
     }
 }
