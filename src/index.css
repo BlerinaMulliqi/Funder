@@ -1,6 +1,19 @@
-body {
-  background-color: rgb(135, 222, 215);
-  font-size: 34px;
-  font-weight: 200;
+#widthtype{
+  width: 50%;
+  height: 50%;
+  margin:50px 0px; padding:0px;
+  margin-left: auto;
+  margin-right: auto;
 
+
+    
+}
+#width2{
+  width: 50%;
+  height: 50%;
+  margin:50px 0px; padding:0px;
+  margin-left: auto;
+  margin-right: auto;
+
+  
 }

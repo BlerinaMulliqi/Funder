@@ -1,6 +1,9 @@
 import React from "react"
 import Button from 'react-bootstrap/Button';
 import axios from 'axios';
+import Form2 from './Form2';
+import Nav from './Nav'
+
 
 class Form extends React.Component {
 
@@ -25,24 +28,10 @@ class Form extends React.Component {
     render() {
         return (
             <div>
-                <form onSubmit={this.something}>
-                <h2>Paypal </h2>
-                
-                
-            <input required type="text" placeholder="" /><br />
-            <label>Location</label><br />
-            <input required type="text"  placeholder="" /><br />
-            <label>Time</label><br></br>
-            <input required type="text" placeholder="" /><br />
-            <label>Add picture</label> <br></br>
-            <input required type="text" placeholder="" /><br />
-            
-            <button>Post</button>
+ 
+               <Form2 />
 
-
-            </form>
-
-        </div>
+            </div>
     )
 }
 }

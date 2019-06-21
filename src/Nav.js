@@ -42,7 +42,7 @@ export default class Example extends React.Component {
           
               </NavItem>
               <NavItem>
-                <NavLink href="/donate">  View Listed Events</NavLink>
+                <NavLink href="/EventList">  View Listed Events</NavLink>
               </NavItem>
               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav caret>

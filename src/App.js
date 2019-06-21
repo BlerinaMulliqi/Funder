@@ -13,85 +13,28 @@ import EventList from './EventList'
 
 
 function App() {
- return (
 
-   <div className="App">
-   <Nav />
+return (
 
-
-     <header className="App-header">
-
-       <div>
-       <div className = "box">
-       <h1>Funder.EDU</h1>
-       <h2> Welcome To Our Landing Page </h2>
-       <div className = "hi">
-      <Link to="/form">
-       <button className="der" > Make Event </button>
-       </Link>
+  <div className="App">
 
 
-       <Link to="/EventList">
-       <button className="der"> View Listed Events </button>
-       </Link>
-       </div>
-       </div>
-       </div>
-       
-     </header>
-   </div>
+    <header className="App-header">
+
+      <div>
+      <div className = "box">
+      <h1>Funder.EDU</h1>
+      <div className = "mini-box">
+      <h3>Welcome to our platform where you can help donate to local youth-based events around your area! </h3>
+      </div>
+
+      </div>
+      </div>
+
+    </header>
+  </div>
 
 
- );
+);
 }
 export default App;
-
-
-
-
-
-
-// // import React, { Component } from 'react';
-// import Form from './Form';
-// import DonateForm from'./DonateForm';
-
-
-
-// class App extends Component {
-//   render() {
-//     return (
-//     <div className="App">
-//         <Form />
-//         <DonateForm />
-      
-//     </div>
-//     );
-//     }
-//   }
-// export default App
-
-
-
-
-
-
-
-
-// // import React, { Component } from 'react';
-// import Form from './Form';
-// import DonateForm from'./DonateForm';
-
-
-
-// class App extends Component {
-//   render() {
-//     return (
-//     <div className="App">
-//         <Form />
-//         <DonateForm />
-      
-//     </div>
-//     );
-//     }
-//   }
-// export default App;

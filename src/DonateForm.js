@@ -1,6 +1,8 @@
 import React from "react"
 import Button from 'react-bootstrap/Button';
 import axios from 'axios';
+import Form1 from './Form1';
+import Nav from './Nav';
 
 class DonateForm extends React.Component {
 
@@ -26,18 +28,7 @@ class DonateForm extends React.Component {
         return (
             <div>
                 <form onSubmit={this.something}>
-                <h2>Paypal </h2>
-        
-                <input required type="text" placeholder="" /><br />
-                <label>Location</label><br />
-                <input required type="text"  placeholder="" /><br />
-                <label>Time</label><br></br>
-                <input required type="text" placeholder="" /><br />
-                <label>Add picture</label> <br></br>
-                <input required type="text" placeholder="" /><br />
-                
-                <button>Post</button>
-
+                < Form1/>
 
                 </form>
 
