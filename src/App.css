@@ -11,7 +11,7 @@
 
 .App-header {
  background-color: #282c34;
- background-image: url('http://www.cuded.com/wp-content/uploads/2013/06/2-cool-background.jpg');
+ background-image: url('https://i.pinimg.com/originals/f0/a9/7c/f0a97ca3a74d6ae77e0d361ed2e074cd.jpg');
  min-height: 100vh;
  display: flex;
  flex-direction: column;
@@ -56,7 +56,16 @@
   text-align: center;
 
 }
-
+.image {
+  width: 700px;
+  height: 700px;
+}
+footer{
+  display: table;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 
 

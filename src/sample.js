@@ -32,11 +32,11 @@ queryStr += 'VALUES($1, $2, $3, $4, $5, $6, $7, $8)';
 
 client.query(queryStr, [title, description, purpose, funds, date, location, pic, orgranization])
 .then((res) => {
-	console.log('Insertion successful';
+	console.log('Insertion successful');
     response.send('success'); 
   })
   .catch( e => {        
     console.log('Insertion failed');
     response.send('failure') 
   });
-  
+});

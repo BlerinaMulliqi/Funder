@@ -15,7 +15,7 @@ ReactDOM.render(
       <div>
         <Nav />
         <Route exact path="/" component={App} />
-        <Route path="/donate" component={DonateForm} />
+        <Route path="/donate/:id" component={DonateForm} />
         <Route path="/form" component={Form} />
         <Route path="/EventList" component={EventList} />
       </div>

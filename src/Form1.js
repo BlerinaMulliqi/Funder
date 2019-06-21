@@ -4,25 +4,19 @@ import { Link} from 'react-router-dom';
 import './index.css'
 import axios from 'axios';
 
-export default class Example extends React.Component {
+class Example extends React.Component {
+  constructor(props) {
+    super(props);
+  }
 
-  
   addToDatabase = (event) => {
-    console.log('Im going to send Express a GET request');
+    console.log('sending request for fundss');
     event.preventDefault(); // NO REFRESH
-    console.log(event.target);
-    let data = {
-      organization: '',
-      title: '',
-      description: '',
-      purpose: '',
-      funds: '',
-      date: '',
-      location: '',
-      pic: ''
-    };
-    
-    axios.post('http://localhost:4000/getEvents', data)
+    // console.log(event.target);
+    let amt = document.getElementById('money').value;
+    console.log(this.props);
+
+    axios.put('http://localhost:4000/addNewMoney/'+this.props.id+"/"+amt)
     .then( res => {
         console.log('got it!');
         console.log(res);
@@ -32,7 +26,9 @@ export default class Example extends React.Component {
     })
 
     console.log('On its way!');
-}
+ 
+  }
+
 
   render() {
     return (
@@ -101,7 +97,7 @@ export default class Example extends React.Component {
             </FormGroup>
             <FormGroup>
               <Label for="exampleCity">How much money $</Label>
-              <Input type="text" name="city" id="exampleCity" placeholder=""/>
+              <Input type="text" name="city" id="money" placeholder=""/>
             </FormGroup>
         
           </Col>
@@ -117,7 +113,10 @@ export default class Example extends React.Component {
       
       </Form>
       </div>
+
     
     );
   }
 }
+  
+export default Example;

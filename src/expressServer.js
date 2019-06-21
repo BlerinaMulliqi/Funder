@@ -22,9 +22,37 @@ app.get('/getEvents', function (request, response) {
         console.log(err);
         response.send([]);
     })
+});
+
+app.get('/addNewMoney', function (request, response){
+    client.query('UPDATE * FROM events WHERE funds')
+    .then( res => {
+        response.send(res.rows.funds)
+    }
+    )
+    .catch( err => {
+        console.log(err);
+        response.send([]);
+    })
+})
+    
+app.put('/addNewMoney/:id/:amount', function (request, response) {
+    console.log(request.params.amount);
+    let {funds} = request.body;
+    let arr = [request.params.id];
+    let query = "UPDATE events SET funds = (SELECT funds FROM events AS E WHERE E.id = $1) + " + request.params.amount + " WHERE ID = $1";
+    client.query(query, arr)
+    .then( res => {
+        console.log(res);
+        console.log('\tfunds is changed into database!')
+        response.send('success');
+    })
+    .catch( err => {
+        console.log(err) ;
+        response.send('failed');
+    });
 
 })
-
 app.post('/addNewEvent', function (request, response) {
     console.log(request.body);
     let {title, date, location,funds,description,pic,organization,purpose} = request.body;
@@ -43,6 +71,10 @@ app.post('/addNewEvent', function (request, response) {
     });
 })
 
+app.delete('/deleteRow', function(request, response) {
+    console.log("row is deleted")
+})
+
 app.listen(4000, function () {
     console.log('Example app listening on port 4000!');
-});
+})

@@ -25,10 +25,11 @@ class DonateForm extends React.Component {
     }
 
     render() {
+        console.log(this.props.match.params.id);
         return (
             <div>
                 <form onSubmit={this.something}>
-                < Form1/>
+                <Form1 id={this.props.match.params.id}/>
 
                 </form>
 

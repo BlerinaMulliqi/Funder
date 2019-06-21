@@ -36,8 +36,10 @@ class EventList extends React.Component {
   render() {
     return (
       <div>
+         <h1 className = "main-title"> List Of Events </h1>
         {this.state.arrEvents.map(event => <EventCard {...event} />)}
       </div>
+
     );
   }
 };
